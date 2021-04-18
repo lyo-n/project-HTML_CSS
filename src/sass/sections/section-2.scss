@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    min-width: 281px;
+    margin: 0 auto;
+
+ 
+    @media screen and (min-width: 768px){
+        min-width: 693px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        min-width: 1299px;
+    }
+}
+
+.section-2{    
+    @media (min-width: 1920px) {
+    background-color:#fafafa;
+    }
+}
+
+.our-study {
+    width: 87.81%;
+    min-width: 281px;
+    margin: 0 auto;
+}
+
+.title-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom:  30px;    
+}
+
+.title-box__icon {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    background: $color-orange;
+    border-radius: 50px;
+    margin-right: 14px;
+}
+
+.title-box__title {
+    font-family: 'OpenSans-Bold';
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: normal;
+}
+.box {
+    width: 69.395%;
+    margin: 0 auto;
+}
+.box__card {
+    width: 69.395%;
+    margin-left: 9.9644%;
+    margin-bottom: 29px;
+}
+.box__card:last-child {
+    margin-bottom: 50px;
+}
+.box__text {
+    font-size: 14px;
+    color: $color_gray;
+    font-family: 'Ubuntu-Regular';
+}
+.box__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding: 14px;
+}
+.earth {
+    background-color: #feefd4;
+}
+.hand {
+    background-color: #ffe0d6;
+}
+.victory {
+    background-color: #e6dcf9;
+}
+.money {
+    background-color: #cceeec;
+}
+.idea {
+    background-color: #e6dcf9;
+}
+.list {
+    background-color: #ffe0d6;
+}
+.target {
+    background-color: #feefd4;
+}
+
+.icons{
+    fill: $color-orange;
+}
+
+.icons:nth-of-type(){
+    fill: red;
+}
+
+@media (min-width: 768px) {
+    .our-study{
+        width: 80.729%;
+        margin: 0 auto; 
+        padding-top: 44px;
+      }     
+    .title-box {
+        width: 620px;
+        margin-bottom: 22px;
+        justify-content: start;
+    }
+    .title-box__title {
+        font-size: 33px;
+    }
+    .box {
+        width: 82.58%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .box__card {
+        width: 34.1936%;
+        margin-bottom: 40px;
+        margin-right: 2.4193%;
+
+    }
+
+    .box__text{
+        font-size: 16px;
+    }
+
+    .box__card:last-child {
+        margin-bottom: 70px;
+    }
+    
+    
+}
+
+@media (min-width: 1920px) {
+    .our-study {
+        width: 100%;
+        padding-top: 110px;
+    }
+    .title-box {
+        width: 1234px;
+        
+    }
+    .box {
+        width: 1299px;
+        margin-left: 0;
+        
+    }
+    .box__card {
+        width: 273px;
+        height: 210px;
+        margin-left: 0;
+        margin-right: 50px;
+    }
+
+    .box__text {
+        font-size: 18px;
+    }
+
+    .box__icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 35px;
+
+    }
+}    

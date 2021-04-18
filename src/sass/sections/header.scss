@@ -1,0 +1,301 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner {
+  min-width: 100%;
+  height: 558px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: $color-black;
+  object-fit: none;
+  opacity: 0.95;
+  margin-bottom: 20px; 
+  position: relative;
+  z-index: 0;  
+}
+
+.header__body {
+  display: flex;
+  min-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
+
+.header__logo {
+  position: fixed;
+  z-index: 8;
+  top: 10px;
+  padding: 10px 10px;
+}
+
+.header__link {
+  display: inline-block;
+  font-size: 28px;
+  color: $color_white;
+  font-family: 'Ubuntu-Bold';
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  &:hover {
+    border-bottom: 2px solid $color-orange_hover;
+  }
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  display: flex; 
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 7;
+
+  & > span,
+  & > span::before,
+  & > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $color_white;
+  }
+
+  span {
+    &::before {
+      content: '';
+      top: -8px;
+    }
+
+    &::after {
+      content: '';
+      top: 8px;
+    }
+  }
+}
+
+.header__menu {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  z-index: 6;
+  top: 0;
+  width: 100%;
+  height: 558px;
+  margin: 0;
+  padding: 100px 0;
+  text-align: center;
+  background-color: $color-violet;
+}
+
+.header__btn {
+  width: 194px;
+  height: 43px;
+  font-size: 16px;
+  color: #f5f9fa;
+  font-family: 'OpenSans-Bold';
+  padding: 10px;
+  background-color: $color-orange_hover;
+  border: none;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background: $color-orange_btn;
+    cursor: pointer;
+  }
+}
+
+#menu__toggle {
+  &:checked {
+    & ~ .menu__btn {
+      & > span {
+        transform: rotate(45deg); 
+        
+        &::before {
+          top: 0; 
+          transform: rotate(0); 
+        }
+
+        &::after {
+          top: 0; 
+          transform: rotate(90deg); 
+        }
+      }	
+    }	
+
+    & ~ .header__menu {
+      visibility: visible;
+      z-index: 5; 
+      left: 0;
+    }	
+  }	
+}
+	
+.header__list {
+  position: absolute;
+  z-index: 1;
+  top: 2300%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+
+  &--swype {
+    display: block;
+
+    & img {
+      margin: 0 auto;
+      width: 20px;
+      height: 16px;
+    }
+  }
+}
+
+.header__title {
+  font-size: 35px;
+  color: $color_white;
+  font-family: 'OpenSans-ExtraBold';
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.header__text {
+  font-size: 16px;
+  color: $color_white;
+  font-family: 'Ubuntu-Regular';
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px;
+  margin-bottom: 60px;
+  
+  span {
+    color: $color-orange_hover;
+  }
+}
+
+@media screen and (min-width:320px){
+  .wrapper {
+    min-width: 281px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px){
+  .wrapper {
+    min-width: 693px;
+  }
+
+  .banner {
+    height: 600px;
+  }
+
+  .header__link:not(:last-child) {
+    font-size: 28px;
+  }
+
+  .header__list {
+    position: absolute;
+    z-index: 1;
+    max-width: 446px;
+
+    &--swype {
+      display: none;
+    }
+  }
+
+  .header__menu {
+    height: 600px;
+  }
+
+  .header__title {
+    font-size: 50px;
+  }
+
+  .header__text {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5px 5px;
+    margin-bottom: 0;
+  }
+  
+}
+
+@media screen and (min-width:1920px){
+  .wrapper {
+    width: 1299px;
+  }
+
+  .banner {
+    object-fit: cover;
+  }
+
+  .header__logo {
+    position: absolute;
+    top: 30px;
+    padding: 10px 10px;
+  }
+
+  #menu__toggle,
+  .menu__btn {
+    visibility: hidden;
+  }
+
+  .header__menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    visibility: visible;
+    background: inherit;
+    width: 1020px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 30px;
+  }
+
+  .header__link {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+   
+  .header__list {
+    max-width: 487px;
+    top: 2300%;
+    left: 56%; 
+  }
+
+  .header__title {
+    font-size: 65px;
+    text-align: left;
+  }
+  
+  .header__text {
+    width: 487px;
+    height: 102px;
+    font-size: 25px;
+    font-weight: 400;
+    
+    &--line {
+      width: 416px;
+      margin: 0 auto; 
+      margin-top: 12px;
+      border-left: 2px solid $color-orange; 
+    }
+  }
+}

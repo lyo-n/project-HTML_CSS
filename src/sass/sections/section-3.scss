@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.our-study {
+  width: 100%;
+}
+
+.learning-structure {
+  width: 87.81%;
+  min-width: 281px;
+  margin: 0 auto;
+}
+
+.title-box {
+  width: 281px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.svg-title {
+  fill: #ffffff;
+}
+.title-box__icon {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  background: $color-orange;
+  border-radius: 50px;
+  background-image: url(../../images/title_icons/);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 14px;
+}
+
+.title-box__title {
+  font-family: "OpenSans-Bold";
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.card-box {
+  counter-reset: list 0;
+  list-style-type: none;
+  margin-bottom: 56px;
+}
+
+.card-box__holder {
+  margin: 0 auto 10px;
+  width: 100%;
+  height: 264px;
+  border-radius: 0 15px;
+  box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: inline-block;
+  width: 86.8327%;
+  height: 226px;
+  margin: 0 auto;
+  border: 1px dashed #ffffff;
+  border-radius: 0 15px;
+  padding-top: 50px;
+  padding-left: 22px;
+}
+
+.card__title {
+  font-family: "Ubuntu-Bold";
+  font-size: 30px;
+  font-weight: bold;
+  color: $color-black;
+}
+
+.card__text {
+  font-family: "Ubuntu-Regular";
+  font-size: 18px;
+  font-weight: normal;
+  color: $color-black;
+  padding-top: 17px;
+}
+
+.card__title:before {
+  counter-increment: list;
+  content: counter(list) ". ";
+}
+
+.holder1 {
+  background-color: #faebd0;
+}
+
+.holder2 {
+  background-color: #fbdcd2;
+}
+
+.holder3 {
+  background-color: #e2d8f5;
+}
+
+.holder4 {
+  background-color: #c8eae8;
+}
+
+@media (min-width: 768px) {
+  .our-study {
+    width: 80%;
+  }
+
+  .learning-structure {
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 44px;
+  }
+
+  .title-box {
+    width: 620px;
+    margin-bottom: 70px;
+    justify-content: start;
+  }
+  .title-box__title {
+    font-size: 33px;
+  }
+  .card-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
+  .card-box__holder {
+    margin-bottom: 20px;
+    width: 48.387%;
+  }
+}
+@media (min-width: 1920px) {
+  .our-study {
+    width: 1299px;
+  }
+
+  .title-box {
+    width: 1299px;
+  }
+  .card-box {
+    width: 1299px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .card-box__holder {
+    margin: 0;
+    width: 23%;
+  }
+
+  .learning-structure {
+    margin-left: 0px;
+  }
+}

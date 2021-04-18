@@ -1,0 +1,487 @@
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .conteiner__section1 {
+    width: 87,81vw;
+    margin: 0 auto; 
+  } 
+  }
+  .section1{
+    width: 87.81%;
+    min-width: 281px;
+    margin: 0 auto;
+  }
+  .section1__flex{
+    margin: 0;
+    padding: 0;
+  }
+  .section1__info{
+    font-size: 60px;
+    font-family: "ProximaNova";
+    color: $color-orange;
+    line-height: 0.0;
+    margin: 0; 
+    margin-bottom: -10px;
+    padding-top: 34px;
+  }
+  .section1__title{
+    font-size: 15px;
+    font-family: 'Ubuntu-Light';
+    color: $color_gray;
+    font-weight: 700;
+    line-height: 1.429;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .section1__title span {
+    display: block;
+    padding-top: 21px;
+  }
+  .section1__img{
+    background-image: -webkit-image-set(url("../images/section-1-icons/sec1_main_mobile.png") 1x,url("../images/section-1-icons/sec1_main_mobile@2x.png") 2x);
+    border-radius: 6px;
+    background-color: $color_white;
+    background-size: cover;
+    owerflow-x: hidden;
+    height: 320px;
+    width: 100%;
+    margin-bottom: 42px;    
+    display: block;  
+  }
+  .section1__programm{
+    border-radius: 8px;
+    background-color: $color-violet;
+    width: 100%;
+    height: 230px;  
+    box-sizing: unset;
+  }
+  .programm__text{
+    font-size: 18px;
+    font-family: 'Ubuntu-Regular';
+    color: $color_white;
+    line-height: 1.333;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    padding-top: 30px;
+    height: 160px;  
+    bottom: 2%; 
+    z-index: 1;
+  }
+  .programm__text:before{
+    content: "";
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    background-color: $color-orange;
+    width: 60px;
+    height: 2px;
+  }
+  .secton1__heading{
+    margin-bottom: 15px;
+    margin-top: 37px;
+  }
+  .heading__block{
+  display: flex;
+  justify-content: flex-start;
+  }
+  .heading__icon{
+    border-radius: 50%;
+    background-color: $color-orange;
+    width: 30px;
+    height: 30px;
+  }
+  .heading__icon img{
+    position: relative;
+    left: 21%;
+    top: 21%;
+  }
+  .heading__block h3{
+    font-size: 20px;
+    font-family: 'OpenSans-Bold';
+    color: $color-black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .section1__direction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 948px;
+    padding-inline-start: 0px;
+    margin-bottom: 35px;
+  }
+  .direction__item{
+    border-radius: 7px;
+    background-color: $color_white;
+    width: 100%;
+    margin: 0 auto;
+    height: 225px;
+    list-style-type: none;
+  }
+  .direction__item a{
+    display: block;
+    text-decoration: none;
+    margin-left: 45px;
+    margin-top: 27px;
+  }
+  .direction__item h4{
+    font-size: 25px;
+    font-family: 'Ubuntu-Bold';
+    color: $color-black;
+    font-weight: bold;
+    line-height: 1;      
+    margin-bottom: 15px;
+  }
+  .direction__info{    
+    font-size: 15px;
+    font-family: 'Ubuntu-Regular';
+    color: $color_gray;
+    line-height: 1.25;
+    letter-spacing: 0.4px;
+    width: 175px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  .derection__years{
+    font-size: 30px;
+    font-family: 'OpenSans-Bold';
+    color: $color-orange;
+    font-weight: bold;
+    line-height: 0.733;
+    margin-bottom: 15px;
+  }
+  .derection__years span{
+    font-size: 13px;
+    font-family: 'Ubuntu-Light';
+    color: $color-orange;
+    line-height: 1.692;
+    vertical-align: 2.2em;
+    text-decoration: underline;
+  }
+  .arrow{
+    fill:$color-orange;
+  }
+  .arrowlong{
+    display: none;
+  }
+  .direction__item:hover{
+    border-radius: 7px;
+    background-color: $color-orange;
+    box-shadow: 1.5px 2.598px 8px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+    height: 225px;
+  }
+  .direction__item:hover .derection__years{
+    color:$color_white;
+  }
+  .direction__item:hover .derection__years span{
+    color:$color_white;
+  }
+  .direction__item:hover  .arrow{
+    fill:$color_white;
+  }
+  .direction__item:hover .direction__info{
+    color:$color_white;
+  }
+  @media (min-width: 768px) {
+    .conteiner__section1 {
+      width: 100vw;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .section1{
+      width: 80.729%;
+      margin: 0 auto; 
+    }     
+    .section1__info{
+      font-size: 70px;
+      font-family: "ProximaNova";
+      color: $color-orange;
+      line-height: 0.444;
+      padding-top: 36px;
+      margin-left: -30px;
+    }
+    .section1__title{
+      margin-top: -20px;
+      font-size: 18px;
+      line-height: 1.389;
+      width: 100%;
+    }
+    .section1__img{
+      background-image: -webkit-image-set(url("../images/section-1-icons/sec1_main_tablet.png") 1x,url("../images/section-1-icons/sec1_main_tablet@2x.png") 2x);    
+      width: 100%;
+      height: 321px;
+      background-color: $color_white;
+      background-size: cover;
+      border-radius: 4px;
+    }
+    .section1__programm{
+      border-radius: 3px;
+      width: 100%;
+      height: 183px;
+      margin-bottom: 67px;
+    }
+    .programm__text{
+      font-family: 'Ubuntu-Regular';
+      font-size: 20px;
+      line-height: 1.4;
+      text-align: left;
+      padding-left: 10%;
+      letter-spacing: 1.0px;
+      width: 82%;
+    }
+    .programm__text p{
+      margin-top: 1%;
+    }
+    .programm__text:after{
+      position: absolute;
+      content: "";
+      left: 7%;
+      top: 22%;
+      background-color: $color-orange;
+      width: 2px;
+      height: 100px;
+    }
+    .programm__text br{
+      display: none;
+    }
+    .programm__text:before{
+      display: none;
+    }
+    .secton1__heading{
+      margin-bottom: 30px;
+      margin-top: 0px;
+  }
+    .heading__block h3{
+      font-size: 33px;
+      font-family: 'OpenSans-Bold';
+      font-weight: 900;
+      line-height: 1.95;
+      text-transform: uppercase;
+      text-align: left;
+      margin-top: -15px;
+      padding-left: 20px;
+    }
+    .section1__direction{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -10px;
+      padding-bottom: 20px;
+      flex-direction: row;
+      margin: 0 auto;
+      height: auto;
+    }
+    .direction__item{
+      border-radius: 7px;
+      width: 50%;
+      margin: 0 auto;
+      height: 295px;
+    }
+    .direction__item a{
+      margin-left: 55px;
+      margin-top: 56px;
+    }
+    .direction__item h4{
+      font-size: 30px;
+      font-family: 'Ubuntu-Bold';
+      font-weight: bold;
+      line-height: 0.833;
+      margin-bottom: 29px;
+    }
+    .direction__info{
+      font-size: 16px;
+      font-family: 'Ubuntu-Light';
+      line-height: 1.375;
+      font-weight: 300;
+      width: 180px;
+      height: 37px;
+      letter-spacing: 0.5px;
+      margin-bottom: 31px;
+    }
+    .derection__years{
+      font-size: 40px;
+      font-family: 'OpenSans-Bold';
+      font-weight: bold;
+      line-height: 0.55;
+    }
+    .derection__years span{
+      font-size: 13px;
+      font-family: 'Ubuntu-Medium';
+      line-height: 1.692;
+    text-decoration: underline;
+    }
+    .direction__item:hover{
+      border-radius: 7px;
+      background-color: $color-orange;
+      box-shadow: 1.5px 2.598px 8px 0px rgba(0, 0, 0, 0.15);
+      width: 50%;
+      margin: 0 auto;
+      height: 295px;
+  }
+  .arrowlong{
+    display: none;
+    fill: $color_white;
+  }
+  .direction__item:hover .derection__years{
+      color:$color_white;
+  }
+  .direction__item:hover .derection__years span{
+      color:$color_white;
+  }
+  .direction__item:hover .arrow{
+      display: none;
+  }
+  .direction__item:hover .arrowlong{
+    display: block;
+  }
+  .direction__item:hover .direction__info{
+      color:$color_white;
+  }
+  }
+  
+  @media screen and (min-width: 1920px) {
+  .conteiner__section1 {
+    max-width: 1299px;
+    width: 100vw;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  } 
+  .section1{
+    width: 100%;
+    margin-bottom: 70px;
+    margin-top: 117px;
+  }
+  .section1__img{
+    background-image: -webkit-image-set(url("../images/section-1-icons/sec1_main_desctop.png") 1x,url("../images/section-1-icons/sec1_main_desctop@2x.png") 2x);
+    border-radius: 5px;
+    width: 650px;
+    height: 400px;
+    background-size: cover;
+  } 
+  .section1__flex{
+    display: flex;
+    justify-content: space-between;
+    width: 1219px;
+    height: 400px;
+    margin-bottom: 114px;
+  }
+  .section1__img{
+    order: 1;
+  }
+  .flex__content{
+    width: 472px;    
+    padding-top: 78px;
+    order: 2;
+  }
+  .section1__info{
+    font-family: 'OpenSans-ExtraBold';
+  }
+  .section1__title{
+  font-size: 20px;
+  line-height: 1.75;
+  letter-spacing: 1.5px;
+  margin-top: -30px;
+  }
+  .section1__info{
+  font-size: 80px;
+  font-family: "ProximaNova";
+  line-height: 0.444;
+  margin-left: -46px;
+  padding-top: 0px;
+  }
+  .section1__programm{
+  border-radius: 4px;
+  box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
+  width: 1298px;
+  height: 228px;
+  margin-top: 0px;
+  margin-bottom: 113px;   
+  }
+  .programm__text{
+  font-size: 25px;
+  font-family: 'Ubuntu-Regular';
+  line-height: 1.4;
+  text-align: left;
+  width: 860px;
+  padding-left: 228px;
+  padding-top: 30px;
+  letter-spacing: 1.9px;
+  }
+  .programm__text br:nth-child(3){
+  display: block;
+  }
+  .programm__text p{
+  margin-top: 4%;
+  }
+  .programm__text:after{
+  position: absolute;
+  content: "";
+  left: 17.5%;
+  top: 40%;
+  width: 2px;
+  height: 87px;
+  }
+  .heading__block h3{
+  font-size: 33px;
+  font-family: 'OpenSans-ExtraBold';
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.364;
+  text-align: left;
+  margin-top: -10px;
+  }
+  .secton1__heading{
+     margin-bottom: 22px;
+  }
+  
+  .section1__direction{
+    min-width: 100%;
+    margin: 0 auto;
+  }
+  .direction__item{
+    width: 25%;
+  }
+  .direction__item:hover{
+    width: 25%;
+  }
+  .direction__item a{
+  margin-left: 57px;
+  margin-top: 56px;
+  }
+  .direction__item h4{
+  font-size: 30px;
+  font-family: 'Ubuntu-Bold';
+  font-weight: bold;
+  line-height: 0.833;
+  }
+  .direction__info{
+  font-size: 18px;
+  font-family: 'Ubuntu-Light';
+  line-height: 1.5;
+  width: 208px;
+  height: 44px;
+  }
+  .derection__years{
+  font-size: 40px;
+  font-family: 'OpenSans-Bold';
+  font-weight: bold;
+  line-height: 0.55;
+  }
+  .derection__years span{
+  font-size: 13px;
+  font-family: 'Ubuntu-Light';
+  line-height: 1.692;
+  text-decoration: underline;
+  }
+  
+  .heading__icon{
+    margin-top: 16px;
+  }
+  
+  }
